@@ -1,0 +1,19 @@
+#coding=utf8
+#配置数据库部分
+#dialect+driver://username:password@host:port/database?charset=编码
+#数据库+数据库驱动://用户名:密码@数据库ip:数据库端口/数据库名?编码
+sql_config_dict={
+    "dialect":"mysql",
+    "driver":"mysqldb",
+    "username":"lingxincheng",
+    "password":"1357924680",
+    "host":"127.0.0.1",
+    "port":"3306",
+    "database":"lingxincheng",
+    "charset":"utf8"
+}
+'''大写的变量名是固定写法
+1.配置SQLAlchemy连接数据库
+2.下面的第二行去掉警告'''
+SQLALCHEMY_DATABASE_URI="{dialect}+{driver}://{username}:{password}@{host}:{port}/{database}?charset={charset}".format(**sql_config_dict)
+SQLALCHEMY_TRACK_MODIFICATIONS=False
