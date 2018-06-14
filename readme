@@ -1,0 +1,6 @@
+1.flask框架包括2个固定文件夹名，和一个主运行.py文件，主运行文件的名字随便取
+所有路径都是相对于这个主运行.py文件
+2.固定文件夹名称是templates和static，templates存放.html文件，static存放
+静态文件，因为render_template()只针对templates文件夹，url_for()只针对
+static和templates文件夹
+

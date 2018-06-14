@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
-    html文档{{ username  }}<br />
-    {{ test }}<br />
-    {{ person.name }}<br />
-    {{person.age}}<br />
-    {{kk.book}}<br />
-    {{kk["book"]}}
-</body>
-</html>
+{% extends 'base.html' %}
+{% block csspath %}
+    {{url_for("static",filename="css/base.css")}}
+{% endblock %}
